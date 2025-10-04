@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://e-commerce-try-k9nh.onrender.com/",
+  "proxy": "https://ecommerce88.netlify.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
