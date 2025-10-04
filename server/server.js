@@ -15,8 +15,14 @@ const app = express();
 app.use(
   cors({
     origin: "https://ecomerce88.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // inclure OPTIONS
+    allowedHeaders: ["Content-Type", "Authorization"], // autoriser les headers utilisés
+    credentials: true, // autoriser cookies/token si besoin
+
   })
 );
+
+app.options("*", cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
