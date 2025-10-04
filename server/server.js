@@ -14,7 +14,7 @@ console.log("MONGO_URI:", process.env.MONGO_URI);
 const app = express();
 app.use(
   cors({
-    origin: "https://e-commerce-try.netlify.app/",
+    origin: "https://ecommerce88.netlify.app/",
   })
 );
 app.use(express.json());
