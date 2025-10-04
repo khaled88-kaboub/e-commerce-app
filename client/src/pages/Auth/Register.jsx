@@ -17,7 +17,7 @@ function Register() {
     }
     try {
       console.log(formData);
-      const response = await fetch("/api/v1/auth/register", {
+      const response = await fetch("https://e-commerce-app-xrum.onrender.com/api/v1/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

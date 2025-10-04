@@ -15,7 +15,7 @@ function Login() {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const response = await fetch("/api/v1/auth/login", {
+      const response = await fetch("https://e-commerce-app-xrum.onrender.com/api/v1/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
